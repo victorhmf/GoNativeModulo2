@@ -10,6 +10,8 @@ import {
   AsyncStorage,
 } from 'react-native';
 
+import PropTypes from 'prop-types';
+
 import api from '~/services/api';
 
 import Icon from 'react-native-vector-icons/FontAwesome';
@@ -20,6 +22,12 @@ import styles from './styles';
 export default class Home extends Component {
   static navigationOptions = {
     title: 'GitIssues',
+  };
+
+  static propTypes = {
+    navigation: PropTypes.shape({
+      navigate: PropTypes.func,
+    }).isRequired,
   };
 
   state = {
