@@ -1,6 +1,5 @@
 import { StyleSheet } from 'react-native';
 import { colors, metrics } from '~/styles';
-import { white } from 'ansi-colors';
 
 const styles = StyleSheet.create({
   container: {
@@ -26,8 +25,10 @@ const styles = StyleSheet.create({
     paddingHorizontal: metrics.basePadding,
   },
 
+  listContainer: {},
+
   plusIcon: {
-    color: colors.dark,
+    color: colors.regular,
   },
 });
 
