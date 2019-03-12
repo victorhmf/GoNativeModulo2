@@ -7,6 +7,14 @@ const styles = StyleSheet.create({
     flex: 1,
   },
 
+  error: {
+    color: colors.danger,
+    fontSize: 13,
+    fontWeight: 'bold',
+    marginBottom: metrics.baseMargin * 2,
+    textAlign: 'center',
+  },
+
   form: {
     alignItems: 'center',
     borderBottomColor: colors.light,
