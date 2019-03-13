@@ -33,8 +33,6 @@ const styles = StyleSheet.create({
     paddingHorizontal: metrics.basePadding,
   },
 
-  listContainer: {},
-
   plusIcon: {
     color: colors.regular,
   },
