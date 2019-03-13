@@ -17,11 +17,15 @@ import api from '~/services/api';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import RepositoryItem from './RepositoryItem';
 
+import { colors } from '~/styles';
+
 import styles from './styles';
+
 
 export default class Home extends Component {
   static navigationOptions = {
     title: 'GitIssues',
+    headerTintColor: colors.dark,
   };
 
   static propTypes = {

@@ -9,24 +9,24 @@ const styles = StyleSheet.create({
   },
 
   container: {
-    flexDirection: 'row',
-    marginHorizontal: metrics.baseMargin * 2,
-    marginTop: metrics.baseMargin * 2,
-    marginBottom: metrics.baseMargin,
     alignItems: 'center',
     backgroundColor: colors.light,
-    padding: metrics.basePadding / 2,
     borderRadius: metrics.baseRadius,
+    flexDirection: 'row',
+    marginBottom: metrics.baseMargin,
+    marginHorizontal: metrics.baseMargin * 2,
+    marginTop: metrics.baseMargin * 2,
+    padding: metrics.basePadding / 2,
+  },
+
+  tab: {
+    alignItems: 'center',
+    flex: 1,
   },
 
   tabText: {
     color: colors.regular,
     fontSize: 14,
-  },
-
-  tab: {
-    flex: 1,
-    alignItems: 'center',
   },
 });
 

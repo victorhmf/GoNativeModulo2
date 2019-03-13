@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { View, Text, TouchableOpacity } from 'react-native';
+import PropTypes from 'prop-types';
 
 import styles from './styles';
 
@@ -19,5 +20,10 @@ const Filter = ({ activeFilter, changeFilter }) => (
     </TouchableOpacity>
   </View>
 );
+
+Filter.propTypes = {
+  activeFilter: PropTypes.string.isRequired,
+  changeFilter: PropTypes.func.isRequired,
+};
 
 export default Filter;

@@ -13,7 +13,8 @@ import styles from './styles';
 const RepositoryItem = ({ repository, navigation }) => (
   <TouchableOpacity
     style={styles.container}
-    onPress={() => navigation.navigate('Issues', { title: repository.name })}
+    onPress={() => navigation.navigate('Issues', { title: repository.name, full_name: repository.full_name })
+    }
   >
     <Image style={styles.avatar} source={{ uri: repository.owner.avatar_url }} />
     <View style={styles.infoContainer}>

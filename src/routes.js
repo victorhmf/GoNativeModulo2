@@ -8,11 +8,9 @@ const Routes = createAppContainer(
       Home,
       Issues,
     },
-    // {
-    //   defaultNavigationOptions: {
-    //     headerBackTitle: null,
-    //   },
-    // },
+    {
+      headerLayoutPreset: 'center',
+    },
   ),
 );
 
